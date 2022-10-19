@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+
+:root{
+  --color-primary:#020000;
+  --color-secondary:#ff0000;
+  --color-white:#fff;
+  --color-black:#000;
+  --color-grey:#454e56;
+  --color-grey6:#12181b;
+  --color-grey2:#DBE1E8;
+
+}
+
+.logoImage{
+    float: right; 
+    padding: 2%;
+    width:13%;
+}
+
+/* ROOM STATUS */
+.room_reserved{
+    background-color: #fc3746;
+}
+
+.room_available{
+    background-color: #33d433;
+}
+
+
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:  var(--color-white);
+  text-align: center;
+  margin: 2.5% 2.5%;
+  text-decoration: none;
+  font-size: xx-large;
+  border-bottom: solid 2px var(--color-white);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition: all .3s;
+  color: var(--color-secondary);
+  border-bottom: solid 2px var(--color-secondary);
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+  
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1000px) {
+  div.topnav a {
+    font-size: xx-large;
+  }
+  #img2 {
+    display: none;
+  }
+  #img1{
+    display: block;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 650px) {
+  div.topnav a {
+    font-size: large;
+  }
+  #img1 {
+    display: none;
+  }
+  #img2 {
+    display: block;
+    width: 7%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width:1000px){
+  #img1{
+    display: none;
+  }
+  #img2{
+    display: block;
+    width: 7%;
+  }
+}
+
+/* center page*/
+
+.center_page{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.center_page_img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.center_page_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow :hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.center_page_text{
+  top: 0;
+}
+
+
+  
+/* contact */
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 0rem;
+  text-align: center;
+  background-color: var(--color-white);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--color-white);
+    margin-top: 3rem;
+    
+}
+
+.card-text {
+    margin-top: -7px;
+    padding: 1.1rem;
+}
+
+.card-img{
+    width: 300px;
+    height: 300px;
+    object-fit:inherit;
+    overflow : hidden;
+}
+
+.title {
+    color: var(--color-grey);
+    font-size: 18px;
+}
+
+
+  
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+.cards .card .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 0px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    bottom: 100%;
+    border-radius: var(--color-secondary);
+}
+
+.button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+
+
+
+@media screen and (max-width:1000px){
+.cards{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+.cards{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+    
+}
+
+
+#menuNavImg{
+  vertical-align: baseline; 
+  margin-right: 3%;
+  margin-left: 3%; 
+  float: right;
+}
+
+
+.container {
+  position: relative;
+width: 100%;	
+}
+
+img {
+   width: 100%;
+ 
+}
+
+.button_200A{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 24%;
+  margin-top: -31%;
+  }
+
+.button_200B{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 38%;
+  margin-top: -7%;
+  }
+
+.button_200C{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 49%;
+  margin-top: -12%;
+  }
+
+.button_200D{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 70%;
+  margin-top: -1%;
+  }
+
+  .button_200E{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 62%;
+  margin-top: 12%;
+  }
+  
+  .button_200F{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 44%;
+  margin-top: 3%;
+  }
+  
+  .button_200G{
+    position: relative;
+	padding: 1%;
+  display:block;
+	color:#f5f5f5;
+	width:6%;
+  height:6%;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  text-align:center;
+  box-shadow: 0 0 3px gray;
+  font-size:100%;
+  font-weight:bold;
+  left: 26%;
+  margin-top: -2%;
+  }
+
+.ReservationTitle{
+  text-align: center;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .list_salles  {
+    font-size: large;
+  }
+  #plan_des_salles {
+    display: none;
+  }
+  #classe_btn{
+    display: none;
+  }
+  #list_salles{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #list_salles{
+    display: none;
+  }
+  
+}
+
+.button_200_tel {
+    position: relative;
+    width: 10rem;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.text_tel{
+  position: relative;
+  padding: 0%;
+  background-color: var(--color-grey2);
+  width: 70%;
+  height: 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 5% 0 0 0;
+  border: solid 2px var(--color-white);
+	margin-top: -22%;
+}
+
+.button_tel{
+  position: relative;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary);
+  width: 8rem;
+  float: right;
+  height: 4rem;
+  padding: 5% 0 0 0;
+  border: solid 2px black;
+  margin-top: -22%;
+}
+
+.la_tel{
+   align-items: center;
+   text-align: center;
+   margin-left: 4rem;
+}
+
+
+.index_button {
+    position: relative;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    width: 16%;
+    left: 6%;
+    margin-top: -16%;
+}
+
+.index_button:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: white;
+    /*box-shadow: 0 0 35px var(--clr);*/
+}
+
+.index_button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: red;
+}
+
+.index_button span {
+    position: relative;
+    z-index: 1;
+}
+
+.index_button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.index_button i::before {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: white;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.index_button:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.index_button i::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: white;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.index_button:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+
+@media screen and (max-width:650px){
+  .center_page_tel{
+    display: block;
+  }
+  .center_page_img{
+    display: none;
+  }
+
+  .index_button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    width: 25%;
+    left: 30%;
+    margin-top: -55%;
+  }
+}
+
+@media screen and (min-width:650px) {
+  .center_page_tel{
+    display: none;
+  }
+  .center_page_img{
+    display: block;
+  }
+}
+
+.planTel {
+  width: 70%;
+  display: block;
+  margin: 6% auto;
+  margin-bottom: 0;
+}
